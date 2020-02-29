@@ -102,25 +102,40 @@ header h2 {
 	left: 150px;
 	margin: 0;
 	border-top: 2px solid rgb(254,202,7);
-	width: 75px;
+	width: 77px;
 }
 
-.formation h2{
+.formation h2 {
 	position: absolute;
-	left:230px;
-	top: 355px;
+	left:150px;
+	top: 325px;
+}
+
+.formation h2, .experience_pro h2, .recommandations h2 {
+	font-size: 1.7em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(254,202,7);
+	padding-bottom: 16px;
+	width: 690px;
+}
+
+.formation i, .experience_pro i, .recommandations i {
+	margin-right: 40px;
+	color: rgb(254,202,7);
+	font-size: 1.2em;
 }
 
 .experience_pro h2{
 	position: absolute;
-	left:230px;
-	top: 815px;
+	left:150px;
+	top: 782px;
 }
 
 .recommandations h2{
 	position: absolute;
-	left:230px;
-	top: 1435px;
+	left:150px;
+	top: 1392px;
 }
 
 /* Colonne gauche */
@@ -224,6 +239,7 @@ aside img {
 	-webkit-border-radius : 50%;
     -moz-border-radius: 50%;
 	border-radius: 50%;
-	padding: 12px;
-	margin: 10px;
+	padding: 15px;
+	margin: 12px;
+	opacity: 0.9;
 }
