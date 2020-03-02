@@ -176,7 +176,8 @@ header h2 {
 	left:-30px;
 	width: 6px;
 	height: 6px;
-	color: rgb(254,202,7);
+	background-color: rgb(254,202,7);
+	background-clip: content-box;
 	padding: 2px;
 	border: 2px solid rgb(254,202,7);
 	-webkit-border-radius : 50%;
