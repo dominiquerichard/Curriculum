@@ -45,11 +45,11 @@
     font-style: normal;
 }
 
-/** Couleurs du thème */
+/** Couleurs générales du thème */
 
 :root {
-	--couleurTheme : rgb(255,183,77);
-	--couleurTheme2 : rgb(255,204,128);
+	--couleurTheme : rgb(255,183,77); /* background aside */
+	--couleurTheme2 : rgb(255,204,128); /* border-radius aside */
 }
 
 /** RESET */
@@ -65,13 +65,15 @@
     font-weight: normal;
 }
 
-/* Colonne droite */
+/* Colonne droite - page principale */
 
 main {
 	float: right;
 	width: 808px;
 	position: relative;
 }
+
+/* 1 header : identité */
 
 header h1 {
 	position: absolute;
@@ -111,28 +113,30 @@ header h2 {
 	width: 77px;
 }
 
+/* 2 déclaration position : absolute; */
+
 .formation {
 	position: absolute;
 	left:65px;
 	top: 325px;
 }
 
-.formation h2, .experience_pro h2, .recommandations h2 {
-	font-size: 1.7em;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-bottom: 2px solid rgb(254,202,7);
-	border-bottom: 2px solid var(--couleurTheme);
-	padding-bottom: 16px;
-	width: 690px;
+.experience_pro {
+	position: absolute;
+	left:65px;
+	top: 782px;
 }
 
-.formation i, .experience_pro i, .recommandations i {
-	margin-right: 50px;
-	color: rgb(254,202,7);
-	color: var(--couleurTheme);
-	font-size: 1.2em;
+.recommandations {
+	position: absolute;
+	left:65px;
+	top: 1392px;
 }
+
+/* 3 déclarations communes sections formations,
+ expérience pro et recommandations */
+
+/* Flex */
 
 .liste {
 	display: -webkit-box; /* Old Safari 3 1-5, iOS 6-, Android */
@@ -157,6 +161,23 @@ header h2 {
     -ms-flex-align: start;
     -webkit-align-items: start;
     align-items: flex-start;
+}
+
+.formation h2, .experience_pro h2, .recommandations h2 {
+	font-size: 1.7em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(254,202,7);
+	border-bottom: 2px solid var(--couleurTheme);
+	padding-bottom: 16px;
+	width: 690px;
+}
+
+.formation i, .experience_pro i, .recommandations i {
+	margin-right: 50px;
+	color: rgb(254,202,7);
+	color: var(--couleurTheme);
+	font-size: 1.2em;
 }
 
 .liste ul {
@@ -250,19 +271,10 @@ header h2 {
 	text-align: justify;
 	width: 440px;
 	margin-top: 6px;
-}
 
-.experience_pro {
-	position: absolute;
-	left:65px;
-	top: 782px;
-}
+} /* Fin des déclarations communes */
 
-.recommandations {
-	position: absolute;
-	left:65px;
-	top: 1392px;
-}
+/* 4 footer : recommandations */
 
 .recommandations h2 {
 	margin-bottom: 0;
@@ -331,13 +343,17 @@ header h2 {
 
 /* Colonne gauche */
 
+/* début aside */
+
 aside {
-	width: 382px;
+	max-width: 382px;
 	height: 1680px;
 	background-color: rgb(254,202,7);
 	background-color: var(--couleurTheme);
 	position: relative;
 }
+
+/* 1 photo d'identité */
 
 aside img {
 	position: absolute;
@@ -349,6 +365,8 @@ aside img {
 	border: 4px solid rgb(218,175,18);
 	border: 4px solid var(--couleurTheme2);
 }
+
+/* 2 déclaration position : absolute; et bandeau */
 
 .contact {
 	position: absolute;
@@ -377,6 +395,7 @@ aside img {
 	text-align: center;
 	background-color: rgb(64,64,64);
 }
+/* 3 section contact */
 
 .contact address p {
 	text-transform: capitalize;
@@ -416,11 +435,17 @@ aside img {
 	margin-left: 50px;
 }
 
+/* 3 section à propos */
+
+
 .a_propos div p {
 	text-align: justify;
 	color: rgb(74,74,74);
 	margin: 30px 50px 0 60px;
 }
+
+/* 4 footer loisirs */
+
 
 .loisirs p {
 	text-align: center;
