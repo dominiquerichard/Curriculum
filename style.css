@@ -147,6 +147,7 @@ header h2 {
 }
 
 .formation h2, .experience_pro h2, .recommandations h2 {
+	width: 86%;
 	font-size: 1.7em;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -165,9 +166,10 @@ header h2 {
 	font-size: 1.2em;
 }
 
-.liste ul {
-	padding-left: 30px;
-	margin: 20px 5px 16px 7.7%;
+.liste_droite {
+	flex-basis: 92%;
+	padding-left: 0;
+	margin-left: 11.5%;
 }
 
 .liste_droite li {
@@ -176,20 +178,20 @@ header h2 {
 	color: rgb(74,74,74);
 	font-size: 1em;
 	font-weight: normal;
-	width: 120px;
-	margin-bottom: 130px;
+	padding-bottom: 130px;
 	position: relative;
 }
 
 .liste_droite--dates {
 	margin: 0;
+	padding-right: 5px;
 	text-transform: capitalize;
 }
 
 .liste_droite--puce1 {
 	position: absolute;
 	top: -10px;
-	left:-30px;
+	left:-26px;
 	width: 6px;
 	height: 6px;
 	background-color: rgb(254,202,7);
@@ -206,7 +208,7 @@ header h2 {
 .liste_droite--puce2 {
 	position: absolute;
 	top: -10px;
-	left:-30px;
+	left:-26px;
 	width: 6px;
 	height: 6px;
 	background-color: rgb(254,202,7);
@@ -224,6 +226,11 @@ header h2 {
 	line-height: 1.1em;
 }
 
+.liste_gauche {
+	flex-grow: 1;
+	padding-left: 0;
+}
+
 .liste_gauche li {
 	list-style-type: none;
 	margin-right: 40px;
@@ -235,7 +242,7 @@ header h2 {
 	font-size: 1.3em;
 	font-weight: bold;
 	line-height: 1.7em;
-	margin: 0 0;
+	margin: 0;
 }
 
 .liste_gauche--soustitre {
@@ -261,7 +268,7 @@ header h2 {
 /* 3 footer : recommandations */
 
 .recommandations div ul {
-	padding-left: 0;
+	padding-left: 7.7%;
 	margin-right: 120px;
 	margin-top: 0;
 }
@@ -333,7 +340,7 @@ aside {
 
 /* 1 photo d'identité */
 
-.photos {
+.photo {
 	text-align: center;
 }
 
@@ -437,6 +444,78 @@ aside img {
 /** Tablette */
 
 @media (max-width: 1024px) {
+
+	main {
+		float: none;
+		width: 100%;
+	}
+
+	aside {
+		max-width: 100%;
+	}
+
+	header h1 {
+		margin-top: 0;
+		font-size: 2.8em;
+	}
+
+	header img {
+		position: absolute;
+		top: 0;
+		left: 58%;
+		width: 15%;
+	}
+
+	.liste {
+		justify-content: center;
+	}
+
+	.liste_droite {
+		flex-basis: 60%;
+	}
+
+	.contact {
+		position: absolute;
+		top: 0;
+		right: 5px;
+		background-color: var(--couleurTheme);
+		max-width: 260px;
+	}
+
+	.contact h2 {
+		font-size: 1.1em;
+	}
+
+	.contact address {
+		margin-top: 3px;
+		font-size: 0.8em;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact address p {
+		margin: 0 3px;
+	}
+
+	.contact p.saut {
+		margin: 3px;
+	}
+
+	.contact p.marge {
+		margin-top: 10px;
+	}
+
+	.contact p:last-of-type {
+	margin-bottom: 10px;
+	}
+
+	.a_propos div p {
+		margin: 30px 50px;
+	}
+
+}
+
 
 }
 
