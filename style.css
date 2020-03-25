@@ -222,6 +222,7 @@ header h2 {
 
 .liste_droite--ville {
 	margin: 0;
+	padding-right: 5px;
 	text-transform: capitalize;
 	line-height: 1.1em;
 }
@@ -466,12 +467,14 @@ aside img {
 		width: 15%;
 	}
 
-	.liste {
-		justify-content: center;
-	}
-
 	.liste_droite {
 		flex-basis: 60%;
+	}
+
+	.recommandations div ul {
+	padding-left: 15%;
+	margin-right: 0;
+	margin-top: 0;
 	}
 
 	.contact {
@@ -516,11 +519,57 @@ aside img {
 
 }
 
-
-}
-
 /** Mobile */
 
 @media (max-width: 700px) {
+
+	header h1 {
+		font-size: 2.3em;
+	}
+
+	header img {
+		top: 7%;
+		left: 40%;
+		width: 20%;
+	}
+
+	.formation h2, .experience_pro h2, .recommandations h2 {
+		max-width: 86%;
+		font-size: 1.1em;
+	}
+
+	.experience_pro {
+		margin-top: -20px;
+	}
+
+	.recommandations {
+		margin-top: -50px;
+	}
+
+	.liste {
+		font-size: 0.8em;
+	}
+
+	.liste_droite {
+		flex-basis: 30%;
+		font-size: 0.8em;
+	}
+
+	.recommandations div ul {
+	padding-left: 8%;
+	}
+
+	.bandeau_gris {
+		font-size: 1.1em;
+	}
+
+	.contact {
+		position: static;
+		max-width: 100%;
+	}
+
+	.a_propos {
+		font-size: 0.8em;
+	}
 
 }
