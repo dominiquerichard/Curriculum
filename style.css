@@ -114,27 +114,9 @@ header h2 {
 /* Flex */
 
 .liste {
-	display: -webkit-box; /* Old Safari 3 1-5, iOS 6-, Android */
-    display: -moz-box; /* Old firefox 21- */
-    display: -ms-flexbox; /* IE 10 */
-    display: -webkit-flex; /* Chrome 21-28, Safari 6.1+ */
-    display: flex; /* IE 11, Chrome 29+, Opera 12.1+, Firefox 22+, Safari 7 */
-    -webkit-box-orient: horizontal; /* flex: row; */
-    -webkit-box-direction: normal;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
+    display: flex;
     flex-direction: row;
-    -webkit-box-pack: start; /* justify-content */
-    -moz-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: start;
     justify-content: flex-start;
-    -webkit-box-align: start; /* align-items */
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    -webkit-align-items: start;
     align-items: flex-start;
 }
 
@@ -143,7 +125,11 @@ header h2 {
 }
 
 .experience_pro {
-	margin-top: 4px;
+	margin-top: 58px;
+}
+
+.recommandations {
+	margin-top: 37px;
 }
 
 .formation h2, .experience_pro h2, .recommandations h2 {
@@ -167,10 +153,11 @@ header h2 {
 }
 
 .liste_droite {
-	flex-basis: 92%;
+	padding-right: 5px;
 	padding-left: 0;
-	margin-left: 11.5%;
-	max-width: 120%;
+	margin-left: 6.3%;
+	flex-basis: 82%;
+	position: relative;
 }
 
 .liste_droite li {
@@ -179,13 +166,11 @@ header h2 {
 	color: rgb(74,74,74);
 	font-size: 1em;
 	font-weight: normal;
-	padding-bottom: 130px;
-	position: relative;
 }
 
 .liste_droite--dates {
 	margin: auto;
-	padding-right: 5px;
+	padding-left: 5px;
 	text-transform: capitalize;
 }
 
@@ -223,14 +208,14 @@ header h2 {
 
 .liste_droite--ville {
 	margin: 0;
-	padding-right: 5px;
+	padding-left: 5px;
 	text-transform: capitalize;
 	line-height: 1.1em;
 }
 
 .liste_gauche {
-	flex-basis: 212%;
 	padding-left: 0;
+	flex-basis: 190%;
 }
 
 .liste_gauche li {
@@ -263,7 +248,7 @@ header h2 {
 	font-size: 1em;
 	text-align: justify;
 	margin-top: 6px;
-	padding-right: 3px;
+	padding-right: 20px;
 
 } /* Fin des déclarations communes */
 
@@ -428,6 +413,7 @@ aside img {
 .loisirs p {
 	text-align: center;
 	padding-bottom: 3px;
+	margin-bottom: 0px;
 }
 
 .loisirs i {
@@ -547,9 +533,9 @@ aside img {
 
 /** Mobile */
 
-/* Main mobile */
-
 @media (max-width: 700px) {
+	
+	/* Main mobile */
 
 	body {
 		display: flex;
@@ -611,21 +597,25 @@ aside img {
 		margin-top: 0;
 	}
 
-	.liste ul {
-		font-size: 0.8em;
+	.liste {
 	}
 
 	.liste_droite {
-		flex-basis: 30%;
+		font-size: 0.9em;
+	}
+
+	.liste_gauche p {
+		font-size: 0.8em;
 	}
 
 	/* class="recommandations" --> class="liste reco" */
+	
 	.reco {
 		flex-wrap: wrap;
 	}
 
 	.recommandations div ul {
-	padding-left: 100px;
+	padding-left: 80px;
 	}
 
 	/* Aside mobile */
