@@ -11,23 +11,21 @@
 	<body id="block_page">
 		<main> <!-- colonne droite -->
 			<header class="identite_principale"> <!-- Haut de page : identité -->
-				<div>
 					<h1><strong>dominique</strong><span> richard</span></h1>
 					<h2>Développeur web freelance
 						<span id="souligne"></span>
 					</h2>
-				</div>
 			</header> <!-- /end Haut de page : identité -->
 			<section> <!-- Liste diplômes et dates -->
 				<div class="formation">
 					<h2>
 						<i class="fas fa-user-graduate"></i>formation
 					</h2>
-					<div> 
+					<article> 
 						<ul>
 							<li class="liste">
 								<div class="liste_droite">
-									<p class="liste_droite--puce1"></p>
+									<i class="far fa-dot-circle"></i>
 									<p class="liste_droite--dates">2019 - 2020</p>
 									<p class="liste_droite--ville">bordeaux</p>
 								</div>
@@ -39,7 +37,7 @@
 							</li>
 							<li class="liste">
 								<div class="liste_droite">
-									<p class="liste_droite--puce2"></p>
+									<i class="fas fa-circle"></i>
 									<p class="liste_droite--dates">1997 - 1998</p>
 									<p class="liste_droite--ville">brest</p>
 								</div>
@@ -50,7 +48,7 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</article>
 				</div> <!-- /end class="formation -->
 			</section> <!-- /end Liste diplômes et dates -->
 			<section> <!-- Liste Expérience pro -->
@@ -58,11 +56,11 @@
 					<h2>
 						<i class="fas fa-briefcase"></i>expérience professionnelle
 					</h2>
-					<div> 
+					<article> 
 						<ul>
 							<li class="liste">
 								<div class="liste_droite">
-									<p class="liste_droite--puce1"></p>
+									<i class="far fa-dot-circle"></i>
 									<p class="liste_droite--dates">2014 - 2016</p>
 									<p class="liste_droite--ville">bordeaux</p>
 								</div>
@@ -74,7 +72,7 @@
 							</li>
 							<li class="liste">
 								<div class="liste_droite">
-									<p class="liste_droite--puce2"></p>
+									<i class="fas fa-circle"></i>
 									<p class="liste_droite--dates">2004 - 2006</p>
 									<p class="liste_droite--ville">bordeaux</p>
 								</div>
@@ -86,7 +84,7 @@
 							</li>
 							<li class="liste">
 								<div class="liste_droite">
-									<p class="liste_droite--puce2"></p>
+									<i class="fas fa-circle"></i>
 									<p class="liste_droite--dates">1998 - 2020 - Poste actuel</p>
 									<p class="liste_droite--ville">gironde</p>
 								</div>
@@ -97,7 +95,7 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</article>
 				</div> <!-- /end class="experience_pro" -->
 			</section>  <!-- Fin Liste Expérience pro -->
 			<footer> <!-- à contacter -->
@@ -105,7 +103,7 @@
 					<h2>
 						<i class="fas fa-pencil-alt"></i>recommandations
 					</h2>
-					<div class="liste reco"> 
+					<article class="liste reco"> 
 						<ul>
 							<li>
 								<p class="recommandations_liste--nom">barbara trench</p>
@@ -129,17 +127,15 @@
 								</p>
 							</li>
 						</ul>
-					</div>
+					</article>
 				</div> <!-- /end class="recommandations" -->
 			</footer> <!-- /end à contacter -->
 		</main> <!-- fin colonne droite principale-->
 		<aside class="colonne_gauche"> <!-- Début colonne gauche -->
-			<header class="photo"> <!-- photo d'identité -->
-				<div>
-					<img src="images/photocv.jpg" alt="photo du profil">
-				</div>
-			</header> <!-- fin photo d'identité -->
-			<section class="contact"> <!-- adresse et contacts -->
+			<figure class="photo"> <!-- photo d'identité -->
+				<img src="images/photocv.jpg" alt="photo du profil">
+			</figure> <!-- fin photo d'identité -->
+			<article class="contact"> <!-- adresse et contacts -->
 				<h2 class="bandeau_gris">contact</h2>
 				<address>
 					<p class="marge">adresse</p>
@@ -161,22 +157,18 @@
 						<a href="skype:live:.cid.b49054cba523a580?call">@domrich</a>
 					</p>
 				</address>
-			</section><!-- /end adresse et contacts -->
-			<section class="a_propos"> <!-- Accroche descriptive du profil -->
+			</article><!-- /end adresse et contacts -->
+			<article class="a_propos"> <!-- Accroche descriptive du profil -->
 				<h2 class="bandeau_gris">à propos de moi</h2>
-				<div>
-					<p>Né en 1972 et âgé de 47 ans, j'ai fait partie de cette génération qui a eu la chance de pouvoir coder en Basic sur Amstrad CPC 464 dans les années 90. Jeune vétéran de l'Education nationale où j'ai beaucoup oeuvré à tous les niveaux, je reviens aujourd'hui à mes premiers choix en envisageant une deuxième carrière en tant que professionnel du développement, dans le domaine de l'Intégration Web. J'apprécie de pouvoir exprimer ma créativité, c'est mon côté littéraire, et mon sens aigu de la précision et de l'exactitude, c'est mon côté latiniste. Mon expertise en langue est un atout.<br />
-					Ces derniers mois, j'ai bénéficié d'un apprentissage intensif de la langue native des navigateurs : je  parle couramment Html et Css,  j'interagis avec JS, je sauvegarde sous Git, j'entretiens de bonnes relations avec Node, je stocke chez MongoDB et je m'investis dans des projets professionnels et collaboratifs avec l'architecture MEAN.<br />Pour moi, compétences riment avec solutions et se conjuguent au pluriel.</p>
-				</div>
-			</section><!-- /end accroche descriptive du profil -->
+				<p>Né en 1972 et âgé de 47 ans, j'ai fait partie de cette génération qui a eu la chance de pouvoir coder en Basic sur Amstrad CPC 464 dans les années 90. Jeune vétéran de l'Education nationale où j'ai beaucoup oeuvré à tous les niveaux, je reviens aujourd'hui à mes premiers choix en envisageant une deuxième carrière en tant que professionnel du développement, dans le domaine de l'Intégration Web. J'apprécie de pouvoir exprimer ma créativité, c'est mon côté littéraire, et mon sens aigu de la précision et de l'exactitude, c'est mon côté latiniste. Mon expertise en langue est un atout.<br />
+				Ces derniers mois, j'ai bénéficié d'un apprentissage intensif de la langue native des navigateurs : je  parle couramment Html et Css,  j'interagis avec JS, je sauvegarde sous Git, j'entretiens de bonnes relations avec Node, je stocke chez MongoDB et je m'investis dans des projets professionnels et collaboratifs avec l'architecture MEAN.<br />Pour moi, compétences riment avec solutions et se conjuguent au pluriel.</p>
+			</article><!-- /end accroche descriptive du profil -->
 			<footer class="loisirs"> <!-- 3 badges Loisirs -->
 				<h2 class="bandeau_gris">loisirs</h2>
 				<div>
-					<p>
 						<i class="fas fa-book-reader"></i>
 						<i class="fas fa-user-edit"></i>
 						<i class="fas fa-chess"></i>
-					</p>
 				</div>
 			</footer> <!-- /end Loisirs -->
 		</aside> <!-- /end colonne gauche -->

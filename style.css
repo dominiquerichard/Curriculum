@@ -65,10 +65,16 @@
     font-weight: normal;
 }
 
+/* Flex principal */
+
+body {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 /* Colonne droite - page principale */
 
 main {
-	float: right;
 	width: 67.9%;
 }
 
@@ -94,8 +100,7 @@ header h2 {
 	font-size: 1.8em;
 	font-weight: bold;
 	color: rgb(74,74,74);
-	margin-top: 0;
-	margin-left: 7.5%;
+	margin: 0 0 0 7.5%;
 }
 
 #souligne {
@@ -115,7 +120,6 @@ header h2 {
 
 .liste {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -125,11 +129,11 @@ header h2 {
 }
 
 .experience_pro {
-	margin-top: 58px;
+	margin-top: 45px;
 }
 
 .recommandations {
-	margin-top: 37px;
+	margin-top: 20px;
 }
 
 .formation h2, .experience_pro h2, .recommandations h2 {
@@ -140,21 +144,18 @@ header h2 {
 	border-bottom: 2px solid rgb(254,202,7);
 	border-bottom: 2px solid var(--couleurTheme);
 	padding-bottom: 16px;
-	margin-top: 0;
-	margin-left: 7.7%;
+	margin: 0 0 40px 7.7%;
 }
 
-.formation i, .experience_pro i, .recommandations i {
-	margin-right: 40px;
-	margin-left: 12px;
+.formation h2 i, .experience_pro h2 i, .recommandations h2 i {
+	margin: 0 40px 0 12px;
 	color: rgb(254,202,7);
 	color: var(--couleurTheme);
 	font-size: 1.2em;
 }
 
 .liste_droite {
-	padding-right: 5px;
-	padding-left: 0;
+	padding: 0 5px 0 0;
 	margin-left: 6.3%;
 	flex-basis: 82%;
 	position: relative;
@@ -174,36 +175,20 @@ header h2 {
 	text-transform: capitalize;
 }
 
-.liste_droite--puce1 {
+.liste_droite i.far {
 	position: absolute;
-	top: -10px;
-	left:-26px;
-	width: 6px;
-	height: 6px;
-	background-color: rgb(254,202,7);
-	background-color: var(--couleurTheme);
-	background-clip: content-box;
-	padding: 2px;
-	border: 2px solid rgb(254,202,7);
-	border: 2px solid var(--couleurTheme);
-	-webkit-border-radius : 50%;
-    -moz-border-radius: 50%;
-	border-radius: 50%;
+	top: 7px;
+	left:-25px;
+	font-size: 1em;
+	color: var(--couleurTheme);
 }
 
-.liste_droite--puce2 {
+.liste_droite i.fas {
 	position: absolute;
-	top: -10px;
-	left:-26px;
-	width: 6px;
-	height: 6px;
-	background-color: rgb(254,202,7);
-	background-color: var(--couleurTheme);
-	padding: 1px;
-	border: 1px solid transparent;
-	-webkit-border-radius : 50%;
-    -moz-border-radius: 50%;
-	border-radius: 50%;
+	top: 7px;
+	left:-25px;
+	font-size: 0.6em;
+	color: var(--couleurTheme);
 }
 
 .liste_droite--ville {
@@ -254,13 +239,16 @@ header h2 {
 
 /* 3 footer : recommandations */
 
-.recommandations div ul {
-	padding-left: 7.7%;
-	margin-right: 120px;
-	margin-top: 0;
+.recommandations h2 {
+	margin-bottom: 32px;
 }
 
-.recommandations li {
+.recommandations article ul {
+	padding-left: 7.7%;
+	margin: 0 120px 0 0;
+}
+
+.recommandations article li {
 	list-style-type: none;
 	width: 200px;
 }
@@ -270,8 +258,7 @@ header h2 {
 	color: rgb(74,74,74);
 	font-size: 1em;
 	font-weight: bold;
-	margin-top: 9px;
-	margin-bottom: 6px;
+	margin: 0 0 6px;
 }
 
 .recommandations_liste--poste {
@@ -289,8 +276,7 @@ header h2 {
 	text-transform: capitalize;
 	font-weight: bold;
 	color: rgb(74,74,74);
-	margin-top: 2px;
-	margin-bottom: 0;
+	margin: 2px 0 0;
 }
 
 .recommandations_liste--email {
@@ -332,8 +318,7 @@ aside {
 }
 
 aside img {
-	margin-top: 65px;
-	margin-bottom: 33px;
+	margin: 48px 0 18px;
 	-webkit-border-radius : 50%;
     -moz-border-radius: 50%;
 	border-radius: 50%;
@@ -354,7 +339,8 @@ aside img {
 	text-align: center;
 	background-color: rgb(64,64,64);
 }
-/* 3 section contact */
+
+/* 3 article contact */
 
 .contact address p {
 	text-transform: capitalize;
@@ -390,34 +376,32 @@ aside img {
 }
 
 .contact p.saut {
-	margin-top: 13px;
-	margin-left: 50px;
+	margin: 13px 0 0 50px;
 }
 
 .contact p:last-of-type {
 	margin-bottom: 40px;
 }
 
-/* 3 section à propos */
+/* 4 article à propos */
 
 
-.a_propos div p {
+.a_propos p {
 	text-align: justify;
 	color: rgb(74,74,74);
-	margin: 30px 50px 85px 50px;
+	margin: 30px 50px 90px;
 }
 
-/* 4 footer loisirs */
+/* 5 footer loisirs */
 
 
-.loisirs p {
+.loisirs div {
 	text-align: center;
-	padding-bottom: 3px;
-	margin-bottom: 0px;
+	margin: 20px 0;
 }
 
 .loisirs i {
-	font-size: 2.5em;
+	font-size: 2.3em;
 	color: rgb(74,74,74);
 	border: 2px solid rgb(74,74,74);
 	-webkit-border-radius : 50%;
@@ -429,14 +413,18 @@ aside img {
 }
 
 /** Media queries */
+
 /** Tablette */
 
 @media (max-width: 1024px) {
 
 	/* Main Tablette */
 
+	body {
+		display: block;
+	}
+
 	main {
-		float: none;
 		width: 100%;
 	}
 
@@ -445,17 +433,18 @@ aside img {
 		font-size: 2.8em;
 	}
 
-	header h2 {
+	header h1 {
 		position: relative;
 	}
 
-	header h2::after {
+	header h1::after {
 		content: "";
 		display: inline-block;
 		position: absolute;
-		right: 28%;
-		width: 100px;
-		height: 100px;
+		top: 50px;
+		right: 10%;
+		width: 200px;
+		height: 200px;
 		background-image: url(images/photocv.jpg);
 		background-size: 100%;
 		-webkit-border-radius : 50%;
@@ -463,20 +452,24 @@ aside img {
 		border-radius: 50%;
 		border: 4px solid rgb(218,175,18);
 		border: 4px solid var(--couleurTheme2);
-		}
+	}
+
+	.formation {
+		margin-top: 520px;
+	}
 
 	.liste_droite {
 		flex-basis: 60%;
 	}
 
-	.recommandations div ul {
+	.recommandations article ul {
 		padding-left: 12%;
-		margin-right: 0;
-		margin-top: 0;
+		margin-right: 80px;
+		margin: 0;
 	}
 
-	.recommandations li {
-		width: 220px;
+	.recommandations article li {
+		width: 250px;
 	}
 
 	/* Aside Tablette */
@@ -485,28 +478,22 @@ aside img {
 		max-width: 100%;
 	}
 
-	header img {
+	aside figure {
 		display: none;
 	}
 
 	.contact {
+		max-width: 1024px;
+		width:100%;
 		position: absolute;
-		top: 0;
-		right: 5px;
+		top: 290px;
 		background-color: var(--couleurTheme);
-		max-width: 260px;
-	}
-
-	.contact h2 {
-		font-size: 1.1em;
 	}
 
 	.contact address {
-		margin-top: 3px;
-		font-size: 0.8em;
 		text-align: center;
 		padding: 0;
-		margin: 0;
+		margin: 3px 0 0;
 	}
 
 	.contact address p {
@@ -525,7 +512,8 @@ aside img {
 	margin-bottom: 10px;
 	}
 
-	.a_propos div p {
+	.a_propos p {
+		font-size: 0.9em;
 		margin: 30px 50px;
 	}
 
@@ -542,47 +530,47 @@ aside img {
 		flex-direction: column-reverse;
 	}
 
-	main header div {
+	header {
 		position: absolute;
-		top: 40px;
-		right: 5px;
+		top: 0;
+		max-width: 700px;
+		width: 100%;
+		background-color: rgba(255,255,255);
+		padding: 20px 0;
 	}
 
 	header h1 {
-		font-family: 'robotomedium';
-		color: rgb(0,0,0);
-		font-size: 1.2em;
-		padding-top: 5px;
-	}
-
-	header strong {
-		font-family: 'robotolight';
-		color :rgb(0,0,0);
-		font-weight: bold;
+		font-size: 2em;
 	}
 
 	header h2 {
-		position: relative;
-		font-size: 1em;
+		font-size: 1.7em;
 	}
 
-	header h2::after {
+	header h1::after {
 		display: none;
 	}
 
-	#souligne {
-		position: absolute;
-		top: 20px;
-		width: 45px;
-		border-top: 2px solid rgb(74,74,74);
-}
-
 	.formation h2, .experience_pro h2, .recommandations h2 {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
-	.liste_droite li {
-		padding-bottom: 210px;
+	.liste {
+		display: block;
+	}
+
+	.liste_droite--ville, .liste_droite--dates {
+		display: inline;
+		font-size: 0.8em;
+	}
+
+	.liste_gauche--titre, .liste_gauche--soustitre {
+		font-size: 0.8em;
+		padding-left: 30px;
+	}
+
+	.liste_gauche--texte {
+		font-size: 0.7em;
 	}
 
 	.formation {
@@ -597,17 +585,6 @@ aside img {
 		margin-top: 0;
 	}
 
-	.liste {
-	}
-
-	.liste_droite {
-		font-size: 0.9em;
-	}
-
-	.liste_gauche p {
-		font-size: 0.8em;
-	}
-
 	/* class="recommandations" --> class="liste reco" */
 	
 	.reco {
@@ -615,21 +592,14 @@ aside img {
 	}
 
 	.recommandations div ul {
-	padding-left: 80px;
+		padding-left: 80px;
 	}
 
 	/* Aside mobile */
 
-	.photo {
-		text-align: left;
-		padding-left: 10px;
-		position: relative;
-	}
-
-	header img {
-		display: inline-block;
-		margin-top: 15px;
-		width: 30%;
+	aside figure {
+		display: block;
+		margin-top: 170px;
 	}
 
 	.bandeau_gris {
@@ -639,11 +609,13 @@ aside img {
 	.contact {
 		position: static;
 		max-width: 100%;
+		font-size: 0.9em;
 	}
 
 	.a_propos p {
 		font-size: 0.7em;
 	}
+
 
 	.loisirs {
 		display: none;
